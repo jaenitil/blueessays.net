@@ -1,0 +1,12 @@
+
+h1 {
+    @include font($font-bold, 35px, $dark-3-pr4-color);
+}
+
+h2 {
+    @include font($font-medium, 33px, $dark-2-pr4-color);
+}
+
+h3 {
+    @include font($font-medium, 27px, $dark-3-pr4-color);
+}
