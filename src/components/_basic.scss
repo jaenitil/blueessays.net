@@ -1,4 +1,7 @@
 
+.container{
+    margin: 0 auto
+}
 h1 {
     @include font($font-bold, 35px, $dark-3-pr4-color);
 }
@@ -9,4 +12,39 @@ h2 {
 
 h3 {
     @include font($font-medium, 27px, $dark-3-pr4-color);
+}
+
+h4 {
+    @include font($font-medium, 22px, $dark-3-pr4-color);
+}
+
+h5 {
+    @include font($font-medium, 17px, $dark-3-pr4-color);
+}
+
+h6 {
+    @include font($font-medium, 15px, $dark-3-pr4-color);
+}
+
+p {
+    @include font($font-regular, 14px, $dark-1-pr4-color);
+}
+
+
+.header {
+    padding: 50px 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 50px;
+    text-align: center;
+
+    h2 {
+        @include font($font-bold, 36px, $pr-main-color);
+        margin: 0;
+    }
+
+    h5 {
+        @include font($font-light, 14px, $pr-4);
+        margin-top: 5px;
+        opacity: 0.6;
+    }
 }

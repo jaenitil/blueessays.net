@@ -1,12 +1,23 @@
 
-.container {
-    width: 600px;
-    margin: 0 auto;
+.palette-section {
+    width: 100%;           
+    max-width: 760px;         
+    padding: 0 60px;       
+    box-sizing: border-box;
+
+    span {
+        @include font($font-light, 12px, #aaa);
+        margin: 10px;
+    }
 
     .row {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         margin-top: 30px;
+
+        .palette-name {
+            @include font($font-regular, 14px, #717070);
+        }
 
         div {
             display: flex;
